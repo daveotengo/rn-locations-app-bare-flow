@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "rn-locations-app-bare-flow",
+    "slug": "rn-locations-app-bare-flow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan barcodes on event tickets."
+      },
+      "plugins": [
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "custom photos permission",
+            "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera",
+            "//": "Disables the microphone permission",
+            "microphonePermission": false
+          }
+        ]
+      ],
+      "bundleIdentifier": "com.daveotengo.rnlocationsappbareflow"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.daveotengo.rnlocationsappbareflow"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
